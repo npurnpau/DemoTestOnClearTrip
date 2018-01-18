@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+       <listener class-name="DarwinBox.DemoAppTest.TestListener"/>
+  </listeners>
+<parameter name="appURL" value="https://www.cleartrip.com/"/>
+<parameter name="browserType" value="chrome"/>
+  <test name="Test">
+    <classes>
+       <class name="DarwinBox.DemoAppTest.tests.BookTicketTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
